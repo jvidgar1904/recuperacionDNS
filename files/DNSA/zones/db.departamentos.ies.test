@@ -1,0 +1,17 @@
+$TTL 604800
+@	IN  SOA ns1.departamentos.ies.test. admin.ies.test. (
+		2023110801	; Serial
+		604800		; Refresh
+		86400		; Retry
+		24219200	; Expire
+		604800 )	; Negative Cache TTL
+
+@	IN  NS		ns1.departamentos.ies.test.
+
+ns1	IN  A		192.168.57.10
+
+matematicas	IN  A	192.168.57.150
+ingles01	IN  A	192.168.57.151
+ingles02	IN  A	192.168.57.152
+lengua		IN  A	192.168.57.153
+tic		IN  A	192.168.57.154
