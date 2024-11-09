@@ -21,3 +21,10 @@ zone "departamentos.ies.test" {
 	masters { 192.168.57.10; };
 	file "/etc/bind/zones/db.departamentos.ies.test";
 };
+
+// Zona inversa
+zone "57.168.192.in-addr.arpa" {
+	type slave;
+	masters { 192.168.57.10; };
+	file "/etc/bind/zones/db.192.168.57";
+};
